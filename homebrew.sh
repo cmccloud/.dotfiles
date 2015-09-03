@@ -187,12 +187,12 @@ require_npm azure-cli
 
 ###############################################################################
 # Ruby Support
-bot "Ruby Gems..."
+# bot "Ruby Gems..."
 ###############################################################################
-require_brew rbenv
-require_brew ruby-build
-eval "$(rbenv init -)"
-require_gem git-up
+# require_brew rbenv
+# require_brew ruby-build
+# eval "$(rbenv init -)"
+# require_gem git-up
 
 ###############################################################################
 # Native Apps (via brew cask)

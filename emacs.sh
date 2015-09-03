@@ -11,11 +11,17 @@ fi
 ok
 
 ###############################################################################
-# Configure Emacs Symlinks and Extra Packages
+# Configure Emacs
 ###############################################################################
-# Replaces cli emacs script with script from bin
+# Symlink emacs script
 ln -s -f ./bin/emacs /usr/bin/emacs
-# Adds emacs client script
+# Symlink emacsclient script
 ln -s -f ./bin/ec /usr/bin/ec
-# Once that is complete, we can install mu
+# Backup .emacs.d
+mv ~/.emacs.d ~/.emacs.d.bak
+# Install Spacemacs
+git clone --recursive https://github.com/cmccloud/spacemacs ~/.emacs.d
+# Move to stable branch
+cd ~/.emacs.d;git checkout develop-stable;
+# Install mu
 brew install mu --with-emacs --HEAD
