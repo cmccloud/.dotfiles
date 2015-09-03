@@ -1,0 +1,25 @@
+[user]
+	name = Christopher McCloud
+	email = mccloud.christopher@gmail.com
+[core]
+	autocrlf = input
+	safecrlf = true
+	editor = ec
+	excludesfile = ~/.gitignore
+[credential]
+	helper = osxkeychain
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[github]
+	user = cmccloud
+	password =
+	oauth-token =
+[hub]
+	protocol = https
