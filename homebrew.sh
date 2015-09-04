@@ -82,6 +82,8 @@ require_brew gnupg
 require_brew ack
 # Install AG
 require_brew the_silver_searcher
+# Install Gtags
+require_brew global --with-exuberant-ctags --with-pygments
 # PDFGrep is used by pdf-tools (Emacs)
 # require_brew pdfgrep
 # docker setup:
@@ -113,7 +115,7 @@ require_brew rlwrap
 require_brew aspell
 # PDF Support Tools
 require_brew mupdf
-# Local storage for Gmail
+# Local storage for e-mail
 require_brew offline-imap
 # Command Line shortcuts
 # require_brew fasd

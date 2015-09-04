@@ -24,4 +24,4 @@ git clone --recursive https://github.com/cmccloud/spacemacs ~/.emacs.d
 # Move to stable branch
 cd ~/.emacs.d;git checkout develop-stable;
 # Install mu
-brew install mu --with-emacs --HEAD
+require_brew mu --with-emacs --HEAD
