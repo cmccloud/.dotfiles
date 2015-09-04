@@ -17,6 +17,8 @@ ok
 ln -s -f ./bin/emacs /usr/bin/emacs
 # Symlink emacsclient script
 ln -s -f ./bin/ec /usr/bin/ec
+# Symlink marked script
+ln -s -f ./bin/ec /usr/bin/marked
 # Backup .emacs.d
 mv ~/.emacs.d ~/.emacs.d.bak
 # Install Spacemacs
