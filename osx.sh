@@ -514,7 +514,7 @@ defaults write com.apple.spotlight orderedItems -array \
 	'{"enabled" = 1;"name" = "MOVIES";}' \
 	'{"enabled" = 1;"name" = "PRESENTATIONS";}' \
 	'{"enabled" = 1;"name" = "SPREADSHEETS";}' \
-	'{"enabled" = 0;"name" = "SOURCE";}';ok
+	'{"enabled" = 1;"name" = "SOURCE";}';ok
 running "Load new settings before rebuilding the index"
 killall mds > /dev/null 2>&1;ok
 running "Make sure indexing is enabled for the main volume"

@@ -270,4 +270,15 @@ require_cask gitter
 # brew cleanup > /dev/null 2>&1
 # bot "All clean"
 
+###############################################################################
+# Install Fonts
+###############################################################################
+brew tap caskroom/fonts
+require_cask font-m-plus
+require_cask font-rounded-m-plus
+require_cask font-source-code-pro
+require_cask font-source-code-pro-for-powerline
+require_cask font-inconsolata
+require_cask font-inconsolata-for-powerline
+
 bot "Homebrew Setup Finished!"
